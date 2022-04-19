@@ -1,5 +1,7 @@
 {
   "expo": {
+    "id": "540693da-9d99-4efc-8d67-fb46d63cfb5f",
+    "owner": "manhnd98",
     "name": "todo",
     "slug": "todo",
     "version": "1.0.0",
@@ -13,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
