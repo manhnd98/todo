@@ -1,4 +1,5 @@
-import { Box, Center, Text, VStack } from 'native-base'
+import { Box, Center, Text, useColorModeValue, VStack } from 'native-base'
+import ThemeToggle from '../../components/theme-toggle'
 
 function MainScreen() {
   return (
@@ -7,14 +8,12 @@ function MainScreen() {
       _light={{ bg: 'blueGray.50' }}
       flex={1}
     >
-      <Box>
-        <VStack>
-          <Text>Hello</Text>
-          <Text>Hello</Text>
-          <Text>Hello</Text>
-          <Text>Hello</Text>
+        <VStack space={5} alignItems="center">
+            <Box p={10} bg={useColorModeValue('red.500', 'yellow.500')}>
+                <Text>Hello world</Text>
+            </Box>
+            <ThemeToggle></ThemeToggle>
         </VStack>
-      </Box>
     </Center>
   )
 }
