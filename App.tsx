@@ -1,11 +1,12 @@
 import { StyleSheet } from 'react-native'
 import AppContainer from './src/components/app-container'
-import MainScreen from './src/screens/main/main'
+import Navigator from './src/screens'
+import 'react-native-gesture-handler';
 
 export default function App() {
   return (
     <AppContainer>
-        <MainScreen />
+        <Navigator></Navigator>
     </AppContainer>
   )
 }

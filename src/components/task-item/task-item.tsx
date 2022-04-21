@@ -1,13 +1,13 @@
 import {
     Box,
-    HStack,
-    Text,
-    themeTools,
+    HStack, themeTools,
     useColorModeValue,
     useTheme
 } from 'native-base'
 import { Pressable } from 'react-native'
+import { EMPTY_FUNCTION } from '../../utils/empty'
 import { AnimatedCheckbox } from '../animated/checkbox'
+import AnimatedTaskLabel from '../animated/task-label/task-label'
 
 interface Props {
   isDone?: boolean
@@ -15,7 +15,7 @@ interface Props {
   onToggleCheckbox?: () => void
 }
 
-const EMPTY_FUNCTION = () => {}
+
 
 function TaskItem(
   props: Props = { isDone: false, onToggleCheckbox: EMPTY_FUNCTION }
@@ -56,7 +56,7 @@ function TaskItem(
           />
         </Pressable>
       </Box>
-      <Text>Hello world</Text>
+      <AnimatedTaskLabel textColor={activeTextColor} inactiveTextColor={doneTextColor} strikeThrough={isDone} onPress={onToggleCheckbox}>Hello world</AnimatedTaskLabel>
     </HStack>
   )
 }

@@ -14,8 +14,9 @@ const vWidth = 30 + MARGIN
 const vHeight = 30 + MARGIN
 const outlineBoxPath =
   'M27.25 1H4.75C2.67893 1 1 2.67893 1 4.75V27.25C1 29.3211 2.67893 31 4.75 31H27.25C29.3211 31 31 29.3211 31 27.25V4.75C31 2.67893 29.3211 1 27.25 1Z'
-const checkMarkPath = 'M24.75 8.73438L12.5547 23.2656L7.32812 17.4531'
+const checkMarkPath = 'M7.5 17L11.7314 22.924C12.117 23.4638 12.9116 23.4854 13.326 22.9675L24.5 9'
 const AnimatedPath = Animated.createAnimatedComponent(Path)
+
 
 interface Props {
   checkmarkColor?: string
